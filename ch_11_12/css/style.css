@@ -1,0 +1,12 @@
+h1{
+	font-weight: bold;
+	text-transform: uppercase;
+}
+.title{
+	text-transform: uppercase;
+	text-shadow: 2px 2px 7px #000000;
+}
+.sub-title::first-letter{
+	font-weight: bold;
+	font-size: 1.6em;
+}

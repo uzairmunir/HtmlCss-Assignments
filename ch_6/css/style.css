@@ -1,0 +1,39 @@
+.text-center{
+	text-align: center;
+}
+table{
+	width: 100%;
+}
+table tr td{
+	padding: 10px;
+}
+.orange{
+	background-color: #FF7F50;
+}
+.blue{
+	background-color: #6495ED;
+}
+.pink{
+	background-color: #DA70D6;
+}
+.dark-blue{
+	background-color: #7B68EE;
+}
+.yellow{
+	background-color: #FFD700;
+}
+.red{
+	background-color: #A0522D;
+}
+.green{
+	background-color: #2E8B57;
+}
+.dark-pink{
+	background-color: #FA8072;
+}
+.dark-yellow{
+	background-color: #DAA520;
+}
+.light-pink{
+	background-color: #FFB6C1;
+}
