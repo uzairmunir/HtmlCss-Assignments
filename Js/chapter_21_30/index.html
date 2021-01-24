@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>chapter 21 to 30</title>
+</head>
+<body>
+
+	<script type="text/javascript">
+		var num =window.prompt("Enter a decimal number: ");
+		num =Math.ceil(num);
+		var text ="This is my dummy text";
+		var newstr =text.slice(0, num);
+
+		function reverseString(str) {
+    		var newString="";
+ 
+    		for (var i = str.length - 1; i >= 0; i--) { 
+        		newString=newString.concat(str[i]);
+    		}
+    		return newString;
+		}
+ 		alert(reverseString(newstr));
+
+	</script>
+
+</body>
+</html>

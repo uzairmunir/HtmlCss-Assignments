@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>chapter 39 to 42</title>
+</head>
+<body>
+
+	<script type="text/javascript">
+		var totalMarks=500;
+		var course1=window.prompt("Enter the marks of course 1: ");
+		course1=parseInt(course1);
+		var course2=window.prompt("Enter the marks of course 2: ");
+		course2=parseInt(course2);
+		var course3=window.prompt("Enter the marks of course 3: ");
+		course3=parseInt(course3);
+		var course4=window.prompt("Enter the marks of course 4: ");
+		course4=parseInt(course4);
+		var course5=window.prompt("Enter the marks of course 5: ");
+		course5=parseInt(course5);
+
+		var obtainedMarks=course1+course2+course3+course4+course5;
+		var percentage=obtainedMarks * 100/ totalMarks;
+
+		var Grade;
+
+		if (percentage>=90) {
+			Grade="A+";
+		}
+		else if (percentage<=89 && percentage>=75) {
+			Grade="A";
+		}
+		else if (percentage<=74 && percentage>=60) {
+			Grade="B";
+		}
+		else if (percentage<60 && percentage>=45) {
+			Grade="C";
+		}
+		else if (percentage<=44 && percentage>=30) {
+			Grade="D";
+		}
+		else{
+			Grade="F";
+		}
+		alert("Result: "+Grade);
+	</script>
+
+</body>
+</html>

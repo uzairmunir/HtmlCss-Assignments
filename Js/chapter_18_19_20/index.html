@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>chapter 18 19 20</title>
+</head>
+<body>
+
+
+	<script type="text/javascript">
+		var vari;
+		var courses=[];
+		for (var i = 0; i <= 4; i++) {
+			vari=window.prompt("course"+(i+1)+" is: ");
+			courses.splice(i,0,vari);
+			vari="";
+		}
+		alert(courses);
+
+		for (var i = 0; i <= 4; i++) {
+			vari=window.prompt("course"+(i+1)+" is: ", courses[i]);
+			courses.splice(i, 1, vari);
+			vari="";
+		}
+
+		alert(courses);
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>chapter 31 to 34</title>
+</head>
+<body>
+
+	<script type="text/javascript">
+		var name=window.prompt("Enter your name: ");
+		var date_d=window.prompt("Enter your DOB(date): ");
+		var date_m=window.prompt("Enter your DOB(month): ");
+		var date_y=window.prompt("Enter your DOB(year): ");
+
+		console.log("Hello "+name+" Good Morning");
+		console.log("Your DOB is: "+date_d+"/"+date_m+"/"+date_y);
+
+		function calculate_age(dob) { 
+    		var diff_ms = Date.now() - dob.getTime();
+    		var age_dt = new Date(diff_ms); 
+  
+ 		  	return Math.abs(age_dt.getUTCFullYear() - 1970);
+		}
+		var age=calculate_age(new Date(date_y, date_m, date_d));
+
+		var d = new Date();
+		var c_m=d.getMonth();
+		var month=12-date_m+(c_m+1);
+		var date;
+
+		var c_d=d.getDate();
+		if (c_d>date_d) {
+
+			date=c_d-date_d;
+		}
+		if (c_d<date_d) {
+
+			date=c_d-date_d;
+			date=date+30;
+			month=month-1
+		}
+
+		console.log("You are "+age+" years "+month+" Month "+date+" Days "+d.getHours()+" Hours "+d.getMinutes()+" Minutes "+d.getSeconds()+" Seconds old");
+		var left_d=365-((parseInt(date_m)*30)+parseInt(date_d));
+		var left_h=24-d.getHours();
+		var left_m=60-d.getMinutes();
+		var left_s=60-d.getSeconds();
+
+		console.log("How much time left in your next birthday? "+left_d+" days "+left_h+" hours "+left_m+" minutes "+left_s+" seconds");
+
+	
+	</script>
+
+</body>
+</html>

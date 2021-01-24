@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>chapter 15 16 17</title>
+</head>
+<body>
+
+	<script type="text/javascript">
+		var courses=[];
+		var course1=window.prompt("course1 is: ");
+		var course2=window.prompt("course2 is: ");
+		var course3=window.prompt("course3 is: ");
+		var course4=window.prompt("course4 is: ");
+		var course5=window.prompt("course5 is: ");
+
+		courses = [course1, course2, course3, course4, course5];
+	
+		alert(courses);
+
+		course1=window.prompt("course1 is: ", course1);
+		course2=window.prompt("course2 is: ", course2);
+		course3=window.prompt("course3 is: ", course3);
+		course4=window.prompt("course4 is: ", course4);
+		course5=window.prompt("course5 is: ", course5);
+
+		courses.splice(0, 1, course1);
+		courses.splice(1, 1, course2);
+		courses.splice(2, 1, course3);
+		courses.splice(3, 1, course4);
+		courses.splice(4, 1, course5);
+
+		alert(courses);
+
+	</script>
+
+</body>
+</html>

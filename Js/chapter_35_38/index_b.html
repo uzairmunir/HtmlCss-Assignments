@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>chapter 35 to 38 B</title>
+</head>
+<body>
+
+	<script type="text/javascript">
+		function factorial(n){
+		  	let answer = 1;
+		  	if (n == 0 || n == 1){
+		    	return answer;
+		  	}
+		  	else{
+		    	for(var i = n; i >= 1; i--){
+		      		answer = answer * i;
+		    	}
+		    	return answer;
+		  	}  
+		}
+		let n = window.prompt("Enter a number: ");
+		answer = factorial(parseInt(n));
+		console.log("the result is " + answer);
+	</script>
+
+</body>
+</html>
